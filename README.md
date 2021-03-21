@@ -8,8 +8,8 @@ Here collected sample details of API calls like, number of devices need to make 
 Execution:
 **
 
-docker docker-compose build
-docker compose up
+1. docker docker-compose build
+2. docker compose up
 
-Got to Web page, and type below url to get API details
-localhost:5000/getscore/<score_id>
+3. Got to Web page, and type below url to get API details
+  - http://localhost:5000/getscore/<score_id>
