@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+   web:
+      build: "./web"
+      image: siddu-web:v1
+      ports:
+         - "5000:5000"
+      links:
+         - my_db
+      depends_on:
+         - redis
+
+   my_db:
+      build: "./db"
+      image: siddu-db:v1
+      ports: 
+        - "27017"
+      volumes:
+         - ./db:/data/db
+
+   redis:
+      image: redis

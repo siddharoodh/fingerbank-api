@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+   name : project_my_db
+   labels:
+      name : mongodb-pod
+      app: demo-web-app
+   spec:
+      containers:
+        - name : mongodb
+          image: redis
+          ports:
+            - containerPort: 27017
