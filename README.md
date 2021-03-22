@@ -12,3 +12,6 @@ Here collected sample details of API calls like, number of devices need to make 
 
 3. Got to Web page, and type below url to get API details
   - http://localhost:5000/getscore/<score_id>
+
+Created kuberentes configuration files:
+fingerbank-api/kube/web-app/
